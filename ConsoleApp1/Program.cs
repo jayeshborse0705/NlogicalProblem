@@ -12,6 +12,8 @@ namespace LogicalProgram
             Console.WriteLine("1: For fibonacci series");
             Console.WriteLine("2: For perfect number");
             Console.WriteLine("3: For prime number");
+            Console.WriteLine("3: For Reverse number");
+
 
 
             int check = Convert.ToInt32(Console.ReadLine());
@@ -29,6 +31,10 @@ namespace LogicalProgram
                 case 3:
                     PrimeNumber primeNum = new PrimeNumber();
                     primeNum.PrimeNum();
+                    break;
+                case 4:
+                    ReverseNumber rev = new ReverseNumber();
+                    rev.ReverseNum();
                     break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
